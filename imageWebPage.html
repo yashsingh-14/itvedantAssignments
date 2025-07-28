@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Image Change</title>
+
+  <style>
+    body {
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    img {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+    }
+
+    /* Show yellow image on large screens */
+    #largeImage {
+      display: block;
+    }
+
+    /* Hide white image on large screens */
+    #smallImage {
+      display: none;
+    }
+
+    /* When screen width is 700px or less */
+    @media (max-width: 700px) {
+      #largeImage {
+        display: none;
+      }
+
+      #smallImage {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Image for screen > 700px -->
+  <img id="largeImage" src="https://www.unboxify.in/cdn/shop/products/51zL2U_3bDL._SL1200.jpg?v=1694963807" alt="Large screen image">
+
+  <!-- Image for screen <= 700px -->
+  <img id="smallImage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0N-LE1lEgGVbdP5y4qp-p0QZEII-5MRyi3g&s" alt="Small screen image">
+
+</body>
+</html>
