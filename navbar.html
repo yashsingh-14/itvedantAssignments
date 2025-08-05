@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ITCART</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .navbar {
+      background-color: #1c1c1c;
+    }
+    .navbar-brand {
+      color: #007bff;
+      font-weight: bold;
+    }
+    .navbar-brand:hover {
+      color: #0056b3;
+    }
+    .content-heading {
+      font-weight: bold;
+    }
+    .sidebar a {
+      text-decoration: none;
+    }
+    .sidebar h6 {
+      color: #007bff;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark px-4">
+  <a class="navbar-brand" href="#">ITCART</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="accountDropdown" role="button" data-bs-toggle="dropdown">
+          Account
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="login.html">Login</a></li>
+          <li><a class="dropdown-item" href="register.html">Register</a></li>
+        </ul>
+      </li>
+    </ul>
+    <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search site">
+      <button class="btn btn-primary" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<!-- Main Section -->
+<div class="container mt-4">
+  <div class="row">
+    <!-- Sidebar -->
+    <div class="col-md-3 sidebar">
+      <h6>Categories Available</h6>
+      <ul class="list-unstyled">
+        <li><a href="#">Laptops</a></li>
+        <li><a href="#">Personal Computers</a></li>
+        <li><a href="#">Tablets</a></li>
+        <li><a href="#">Headphones</a></li>
+      </ul>
+
+      <h6 class="mt-4">Reviews</h6>
+      <ul class="list-unstyled">
+        <li><a href="#">For Services</a></li>
+        <li><a href="#">For Products</a></li>
+        <li><a href="#">For Consultation</a></li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="col-md-9">
+      <h4 class="content-heading">India’s Leading and Trusted tech paradise – <a href="#" class="text-primary">ITCART</a></h4>
+      <p>Welcome to our tech paradise, where innovation meets convenience at the click of a button. Step into a world of cutting-edge technology and endless possibilities as you explore our curated collection of IT goods. From sleek laptops to powerful desktops, from state-of-the-art gadgets to must-have accessories, we have everything you need to stay ahead in the digital age. Whether you're a tech enthusiast, a professional, or simply looking to upgrade your devices, our comprehensive range has something for every need and budget.</p>
+      <p>Navigate our user-friendly interface with ease, and discover the latest in tech trends and innovations. With detailed product descriptions and customer reviews, making informed decisions has never been easier. Experience unmatched convenience with our secure payment options and lightning-fast delivery services, ensuring that your tech essentials reach you when you need them most. Plus, with our dedicated customer support team, assistance is just a click away. Join our community of tech aficionados and elevate your digital lifestyle today. Welcome to ITCART, where the future is just a few clicks away!"</p>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
